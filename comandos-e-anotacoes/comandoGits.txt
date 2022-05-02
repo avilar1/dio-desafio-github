@@ -1,0 +1,66 @@
+NOVO RESUMO GIT
+
+saber as pastas
+ls
+[ocultos ls -a]
+
+criar diretório
+mkdir
+
+limpa terminal
+CTRL+l
+
+iniciar um repositório
+git init
+
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+--Tracked
+	-Untracked
+	[criado]
+	-Unmodiefied
+	[mudou arquivo] [[é editado? vai pra modified]]
+	-Modified
+	[adicionado] [["stage" o arquivo? vai pra staged]]
+	Staged
+	[commitado] [[foi commitado? volta pro Unmodified]]
+
+	--ambiente de desenvolvimento
+	-working directory [untracked] 
+	>git add:
+	-staging area [unmodified/ modified]
+	>git commit -m
+	-local repository [commit]
+
+	--remote repository
+
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+mover arquivos
+mv <arquivo> ./<pasta>
+
+adicionar o arquivo [Modified]
+git add <nome do arquivo>
+
+commitar [Staged]
+git commit -m "<mensagem>"
+
+cancelar add
+git restore --staged <arquivo>
+
+criando arquivo com echo
+echo > <nome do arquivo>
+
+ADICIONAR REPOSITORIO REMOTO
+git remote add origin <link do github>
+
+	origin é um padrão, mas poderia ser qualquer
+
+EMPURAR PARA O REMOTO
+git push origin master
+
+--resolvendo conflitos
+	abra o arquivo, vai ter as duas versões nele, altere como queira e salve
+	depois commite normalmente
+	ou seja, resolva manualmente
+
+Clonar repositório
+git clone <link> [isso dentro do repositório que vc queria
